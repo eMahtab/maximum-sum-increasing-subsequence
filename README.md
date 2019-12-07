@@ -35,9 +35,9 @@ public static List<List<Integer>> maxSumIncreasingSubsequence(int[] nums) {
 		
 		List<List<Integer>> result = buildSequence(nums, sequence, maxSumIndex, dpTable[maxSumIndex]);
 		return result;
-	}
+}
 
-	public static List<List<Integer>> buildSequence(int[] nums, int[] sequence, int maxSumIndex, int maxSum) {
+public static List<List<Integer>> buildSequence(int[] nums, int[] sequence, int maxSumIndex, int maxSum) {
 		List<List<Integer>> list = new ArrayList<List<Integer>>();
 		list.add(new ArrayList<Integer>());
 		List<Integer> subsequence = new ArrayList<Integer>();
@@ -48,6 +48,6 @@ public static List<List<Integer>> maxSumIncreasingSubsequence(int[] nums) {
 			maxSumIndex = sequence[maxSumIndex];
 		}
 		return list;
-	}
+}
 
 ```
