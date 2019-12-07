@@ -1,1 +1,1 @@
-# maximum-sum-increasing-subsequence
+# Maximum Sum Increasing Subsequence
