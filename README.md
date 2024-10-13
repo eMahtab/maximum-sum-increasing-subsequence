@@ -11,7 +11,7 @@ Input: [10, 70, 20, 30, 50, 11, 30]
 Output: [[110], [10, 20, 30, 50]]
 
 
-## Implementation 1 : Dynamin Programming O(n^2)
+## Implementation 1 : Dynamic Programming O(n^2) (Return just the maximum possible sum)
 ```java
 class Solution
 {
