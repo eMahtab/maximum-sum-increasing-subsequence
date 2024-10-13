@@ -12,7 +12,7 @@ Output: [[110], [10, 20, 30, 50]]
 
 ## Approach : 
 This problem is very similar to Longest Increasing Subsequence, just that for this problem we have to find the Maximum sum possible with the Increasing subsequence.
-
+e.g. [1, 12, 2, 3, 4] for this input , the Longest Increasing Subsequence will be [1, 2, 3, 4] of length 4, but the Maximum Sum Increasing subsequence will be [1, 12] having sum 13.
 ## Implementation 1 : Dynamic Programming O(n^2) (Return just the maximum possible sum)
 ```java
 class Solution
