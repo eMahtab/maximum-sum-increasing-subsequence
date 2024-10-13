@@ -35,7 +35,7 @@ class Solution
 }
 ```
 
-## Implementation 2 : Return the Maximum Sum Increasing Sequence
+## Implementation 2 : O(n^2) Return the Maximum Sum Increasing Sequence
 ```java
 public static List<List<Integer>> maxSumIncreasingSubsequence(int[] nums) {
 		if(nums == null || nums.length == 0) {
