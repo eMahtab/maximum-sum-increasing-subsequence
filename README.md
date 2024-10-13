@@ -11,6 +11,30 @@ Input: [10, 70, 20, 30, 50, 11, 30]
 Output: [[110], [10, 20, 30, 50]]
 
 
+## Implementation 1 : Dynamin Programming O(n^2)
+```java
+class Solution
+{
+	public int maxSumIS(int nums[], int n)  
+	{  
+	    if(nums == null || nums.length == 0)
+              return Integer.MIN_VALUE;
+            int length = nums.length;
+            int[] dpTable = nums.clone();
+            int maxSum = nums[0];
+            for(int i = 1; i < length; i++) {
+               for(int j = 0; j < i; j++) {
+                  if(nums[j] < nums[i] && dpTable[j] + nums[i] > dpTable[i] ) {
+                        dpTable[i] = dpTable[j] + nums[i];
+                        maxSum = Math.max(maxSum, dpTable[i]);
+                  }
+               }
+            }
+          return maxSum;
+	}  
+}
+```
+
 ```java
 public static List<List<Integer>> maxSumIncreasingSubsequence(int[] nums) {
 		if(nums == null || nums.length == 0) {
