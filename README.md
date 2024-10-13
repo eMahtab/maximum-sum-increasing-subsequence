@@ -10,6 +10,8 @@ Input: [10, 70, 20, 30, 50, 11, 30]
 
 Output: [[110], [10, 20, 30, 50]]
 
+## Approach : 
+This problem is very similar to Longest Increasing Subsequence, just that for this problem we have to find the Maximum sum possible with the Increasing subsequence.
 
 ## Implementation 1 : Dynamic Programming O(n^2) (Return just the maximum possible sum)
 ```java
