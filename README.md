@@ -79,3 +79,5 @@ public static List<List<Integer>> buildSequence(int[] nums, int[] sequence, int 
 }
 
 ```
+# References :
+https://www.youtube.com/watch?v=99ssGWhLPUE
